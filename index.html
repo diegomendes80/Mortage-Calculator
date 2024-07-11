@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <main class="content">
+    <section class="content__calculator">
+      <div class="calculator__header">
+        <h3 class="header__title"> Mortgage Calculator</h3>
+        <a href="#" class="header__clear-button">Clear All</a>
+      </div>
+
+
+      <form action="" class="calculator__form">
+        <div class="form__amount input-container">
+          <label for="amount__value">Mortage Amount</label>
+          <input type="number" id="amount__value">
+
+          <span class="span-error erro-amount">This field is required</span>
+
+        </div>
+
+        <div class="form__term input-container">
+          <label for="term__value">Mortage Term</label>
+          <input type="number" id="term__value">
+          <span class="span-error erro-term">This field is required</span>
+
+        </div>
+
+        <div class="form__rate input-container">
+          <label for="rate__value">Interest Rate</label>
+          <input type="number" step="0.01" id="rate__value">
+          <span class="span-error erro-rate">This field is required</span>
+
+        </div>
+
+        <div class="form__type input-container">
+          <label>Mortage Type</label>
+          <div class="type__repay">
+            <label for="repayment">Repayment</label>
+            <input type="radio" id="repayment">
+            
+          </div>
+
+          <div class="type__interest">
+            <label for="intesrest-only">Interest Only</label>
+            <input type="radio" id="intesrest-only">
+          </div>
+          <span class="span-error erro-type">This field is required</span>
+
+        
+        </div>
+
+        <button class="form__button">
+          <img src="assets/images/icon-calculator.svg" alt="calcular">
+          <p>Calculate Repayments</p>
+        </button>
+
+      </form>
+    </section>
+
+    
+  <!-- Empty results start -->
+
+  <section class="content__results">
+
+    <div class="sem-resultado">
+      <img src="assets/images/illustration-empty.svg" alt="sem nada pra calcular">
+      <h2 class="sem-resultado__title">Results shown here</h2>
+      <p class="sem-resultado__text">complete the form and click "calculate repayments to seewhat your monthly repayments would be.</p>
+    </div>
+
+    <div class="com-resultado">
+      <div class="results__header">
+        <h2 class="header__title">Your Results</h2>
+        <p class="header__text">Your results are shown below based on information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
+      </div>
+
+      <div class="results__result">
+        <div class="result__monthly">
+          <p>Your monthly repayments</p>
+
+          <h1 class="monthly__value">R$ 1,200.74</h1> 
+
+        </div>
+
+        <div class="result__total">
+          <div class="total__linha"></div>
+          <p>Total you'll repay over the Term</p>
+
+          <h2 class="total__value">R$ 300,000.81</h2> 
+
+        </div>
+      </div>
+  </div>
+
+
+  </section>
+
+
+  </main>
+ 
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+Mortage amount = total da hipoteca
+Mortage term = tempo que vai ficar pagando (multiplica por 12)
+Interest Rate = Taxa de Juros (dividir por 12)
+
+
+1. Hipoteca com Reembolso (Repayment Mortgage)
+
+---Fórmula para o pagamento mensal (PMT) o numero verde que vai ser mostrado:
+
+PMT = Mortage amount * [ (juros*(1+juros)^Mortage term) / ( (1+juros)^Mortage term -1 ) ]
+
+---Fórmula para o total a ser pago ao longo do prazo:
+
+Total repay = (PMT * Mortage term) 
+
+
+
+
+2. Hipoteca Somente Juros (Interest-Only Mortgage)
+
+---Fórmula para o pagamento mensal de juros:
+PMT = Mortage amount * Interest Rate
+
+---Fórmula para o total a ser pago ao longo do prazo (somente juros):
+Total repay = (PMT*Mortage term) + Mortage amount
+
